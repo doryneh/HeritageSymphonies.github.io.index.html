@@ -1,967 +1,119 @@
 @font-face {
-    font-family: HT;
-    src: url(../fonts/HTBaybarsDisplay-Regular.otf);
+    font-family: Lifta;
+    src: url(../fonts/Lifta-Black.otf);
 }
-
-body {
+@font-face {
+    font-family: RowdiesLight;
+    src: url(../fonts/Rowdies-Bold.ttf);
+}
+body{
     direction: rtl;
-    font-family: HT;
-    overflow-x: hidden;
+    font-family: Lifta;
+}
 
+.TopNav{
+    height: fit-content;
+}
+.TopNav img{
+    height: 100%;
+    width: 200px;
+}
+.TopNav img.Logo{
+    width: 350px;
 }
 
 
-.SectionTitle {
-    color: #3B3077;
-    font-size: 48px;
-    font-weight: 800;
-    line-height: normal;
-    margin-bottom: 20px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 90px;
+
+/***********
+***********
+Navbar
+***********
+***********/
+nav.navbar{
+    background-image: url(../images/NavbarBg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
-
-.SectionTitle .Text {
-    z-index: 100;
-    display: block;
+nav.navbar ul li{
+    margin-left: 15px;
 }
-
-.SectionTitle .YellowCircle {
-    position: absolute;
-    left: 45%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
+nav.navbar ul li a{
+    color: white;
+    font-family: Lifta;
+    font-weight: 200;
+    font-size: 18px;
+    transition: 0.2s ease all;
 }
-
-.Paragraph {
-    font-size: 20px;
-    font-weight: 800;
-    line-height: normal;
-    ;
-}
-
-.BlueText.disabled {
-    color: rgba(59, 48, 119, 0.7);
-
-}
-
-.BlueText {
-    color: rgb(59, 48, 119);
-}
-
-a {
-    text-decoration: none !important;
-}
-
-img[imgsrc] {
-
-    background-color: #eee;
-}
-
-/*************
-*************
-Navar
-**************
-**************/
-nav.navbar {
-    background-color: white;
-}
-
-
-nav.navbar .navbar-collapse .navbar-nav .nav-link {
-    color: #3B3077;
-    margin-left: 20px;
-    font-size: 20px;
-    font-weight: 800;
-    line-height: normal;
-    width: fit-content;
-    opacity: 0.6;
-}
-
-nav.navbar .navbar-collapse .navbar-nav .nav-link.active, nav.navbar .navbar-collapse .navbar-nav .nav-link:hover, nav.navbar .form-select:hover {
-    color: #3B3077;
-    position: relative;
-    cursor: pointer;
-    font-weight: 900;
-    opacity: 1;
-
-
-}
-
-nav.navbar .navbar-toggler {
-    color: #3B3077;
-    border: none;
-    box-shadow: none;
-    font-size: 24px;
-}
-
-nav.navbar .ContactSartBtn {
-    background-color: #EFD358;
-    display: flex;
-    height: 51px;
-    padding: 12px 24px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    color: #3B3077;
-    text-decoration: none;
-    border-radius: 50px;
-    transition: 0.3s ease all;
-}
-
-nav.navbar .ContactSartBtn img {
-    width: 40px;
-    transition: 0.3s ease all;
-
-}
-
-nav.navbar .ContactSartBtn:hover {
-    background-color: #3B3077;
+nav.navbar ul li a:hover{
+    transform: scale(1.1);
+    filter: brightness(90%);
     color: white;
 }
+/***********
+***********
+End Navbar
+***********
+***********/
 
-nav.navbar .ContactSartBtn:hover img {
-    filter: brightness(0) invert(1);
-}
-
-/*************
-*************
-End Navar
-**************
-**************/
-
-
-/*************
-*************
-Header
-**************
-**************/
-header.header h1 {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-header.header h1 .HeaderTitle {
-    font-size: 67px;
-    font-weight: 800;
-    line-height: normal;
-    text-align: center;
-    color: #3B3077;
-    z-index: 10;
-    width: fit-content;
-}
-
-h1 .YellowCircle {
-    position: absolute;
-    left: 40%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-}
-
-header.header h2 {
-    color: #3b3077b5;
-    font-size: 32px;
-    font-weight: 800;
-    line-height: normal;
-    text-align: center;
-}
-
-
-/*****
-Carousel Header
-*****/
-.CarouselPart {
-    height: 80vh;
-    flex-direction: row-reverse;
-    align-items: stretch;
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-
-}
-
-.CarouselPart .CarouselItem {
-    width: 8% !important;
-    height: 100%;
-    transition: width 0.5s ease;
-    overflow: hidden;
-}
-
-.CarouselPart .CarouselItem img {}
-
-.CarouselPart .CarouselItem.active {
-    width: 76% !important;
-}
-
-.CarouselDots {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.CarouselDots {
-    position: absolute;
-    left: 20px;
-    bottom: 20px;
-}
-
-.CarouselDot {
-    width: 12px;
-    height: 12px;
-    background-color: white;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-    opacity: 0.5;
-}
-
-.CarouselDot.active {
-    opacity: 1;
-}
-
-
-/*************
-*************
-end Header
-**************
-**************/
-
-/*************
-*************
-Blog Cards
-**************
-**************/
-section.BlogCards .YellowCircle {
-    left: 42%;
-}
-
-section.BlogCards .card {
+/***********
+***********
+header
+***********
+***********/
+header.header button.HeaderButton{
     background-color: transparent;
     border: none;
-}
-
-section.BlogCards .card .blogImage {
-    border-radius: 15px;
-    width: 100% !important;
-}
-
-/*************
-*************
-end Blog Cards
-**************
-**************/
-
-
-/*************
-*************
-Feedback
-**************
-**************/
-section.Feedback .YellowCircle {
-    left: 40%;
-}
-section.Feedback .YellowCircle.YellowCircle2{
-    left:45%;
-}
-section.Feedback .GreyBox {
-    border-radius: 8px;
-    background: #F6F6F6;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 16px;
-    flex: 1 0 0;
-    height: 100%;
-}
-
-section.Feedback .GreyBox .BigText {
-    font-size: 24px;
-    font-weight: 800;
-    line-height: normal;
-}
-
-section.Feedback .GreyBox .SmallText {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-/*************
-*************
-end Feedback
-**************
-**************/
-
-/*************
-*************
-Estefsar
-**************
-**************/
-section.Estefsar .YellowCircle {
-    left: 40%;
-}
-
-section.Estefsar .ContactSartBtn {
-    margin: auto;
+    background-image: url(../images/ButtonBg.png);
+    background-size: contain;
+    padding: 10px 40px;
     color: white;
-    border-radius: 80px;
-    background-color: #3B3077;
-    text-align: center;
-    padding: 7px 30px;
-    transition: 0.5s ease all;
-}
-
-section.Estefsar .ContactSartBtn:hover {
-    background-color: #EFD358;
-    color: #3B3077;
-
-}
-
-section.Estefsar .ContactSartBtn img {
-    filter: brightness(0) invert(1);
-    transition: 0.5s ease all;
-
-}
-
-section.Estefsar .ContactSartBtn:hover img {
-    filter: brightness(100%) invert(0);
-
-}
-
-section.Estefsar .ImagesPart .PuprleBG {
-    background-color: #3B3077;
-    border-radius: 16px;
-    height: 300px;
-    width: 100%;
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
-}
-
-section.Estefsar .ImagesPart .ImgRow {
-    position: relative;
-    display: flex;
-    align-items: baseline;
-    justify-content: start;
-    width: 100%;
-    z-index: 10;
-    margin-top: 30px;
-}
-
-section.Estefsar .ImagesPart .ImgRow .SmallImg {
-    height: 110%;
-}
-
-/*************
-*************
-end Estefsar
-**************
-**************/
-
-
-/*************
-*************
-AboutUs
-**************
-**************/
-section.AboutUs .TextInImage .TextPart {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-section.AboutUs .TextInImage .TextPart .TextBigSize {
-    font-size: 28px;
-    font-weight: 400;
-    line-height: normal;
-    color: white;
-    text-align: center;
-    margin-top: 30px;
-}
-
-/*************
-*************
-End AboutUs 
-**************
-**************/
-
-
-
-
-/*************
-*************
-Footer
-**************
-**************/
-footer.footer {
-    background-color: white;
-    overflow: hidden;
-}
-
-
-footer.footer img {
-    width: 120px;
-}
-
-footer.footer a, footer.footer p {
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 150%;
-    text-align: center;
-    color: #3B3077;
-    text-decoration: none;
+    font-size: 25px;
+    width: 250px;
+    background-repeat: no-repeat;
+    background-position: center center;
     transition: 0.3s ease all;
 }
-
-footer.footer a:hover {
-    color: #2a2255;
-}
-
-footer.footer .socialMedia a {
-    font-size: 30px;
-    color: #3B3077;
-
-}
-
-footer.footer .socialMedia a:hover {
-    transform: scale(1.2);
-}
-
-/*************
-*************
-End Footer
-**************
-**************/
-
-/*********************
-*********************
-Animation Top
-*********************
-*********************/
-
-
-.header h1 .HeaderTitle, .header h2, .header .CarouselPart .CarouselItem, .Estefsar .ContactSartBtn, .Estefsar .ImgRow img, .Estefsar .PuprleBG, .ArtPartners .col-lg-3 img, .YellowCircle, .SectionTitle .Text, .Feedback .GreyBox, .UnderText, .BlogCards .CardsPart .col-lg-3 .card, .footer .FooterRow p, .footer .FooterRow .socialMedia a, .footer .FooterRow img, .footer .FooterRow a {
-    position: relative;
-    opacity: 0;
-    transition: 2s ease all;
-
-}
-
-.YellowCircle {
-    width: 0px;
-    opacity: 0;
-}
-
-.active .YellowCircle {
-    width: 80px;
-    opacity: 1;
-}
-
-.BlogCards .CardsPart .col-lg-3 .card, .Feedback .GreyBox, .ArtPartners .col-lg-3 img, .Estefsar .PuprleBG, .Estefsar .ContactSartBtn {
-    transform: translateY(150%);
-    opacity: 0;
-    transition: transform 2s ease, opacity 2.5s ease;
-}
-
-.Estefsar .PuprleBG {
-    transition: 1s ease all !important;
-}
-
-.BlogCards.active .CardsPart .col-lg-3 .card.active, .Feedback.active .GreyBox.active, .Estefsar.active .PuprleBG, .Estefsar.active .ContactSartBtn, .ArtPartners.active .col-lg-3 img.active {
-    transform: translateY(0%) !important;
-    opacity: 1;
-}
-
-.header h1 .HeaderTitle, .header h2, .SectionTitle .Text, .UnderText {
-    transform: translateY(150%);
-}
-
-.header.active h1 .HeaderTitle, .header.active h2, .active .SectionTitle .Text, .active .UnderText {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.header .CarouselPart .CarouselItem {
-    transform: translateX(150%);
-
-
-
-}
-
-.header.active .CarouselPart .CarouselItem.CarouselOne {
-    transform: translateX(0%);
-    opacity: 1;
-    transition: width 0.5s ease, opacity 3s ease-in-out 0s, transform 2s ease-in-out 0s;
-
-}
-
-.header.active .CarouselPart .CarouselItem.CarouselTwo {
-    transform: translateX(0%);
-    opacity: 1;
-    transition: width 0.5s ease, opacity 3s ease-in-out 1s, transform 2s ease-in-out 1s;
-
-}
-
-.header.active .CarouselPart .CarouselItem.CarouselThree {
-    transform: translateX(0%);
-    opacity: 1;
-    transition: width 0.5s ease, opacity 3s ease-in-out 1.5s, transform 2s ease-in-out 1.5s;
-
-}
-
-.header.active .CarouselPart .CarouselItem.CarouselFour {
-    transform: translateX(0%);
-    opacity: 1;
-    transition: width 0.5s ease, opacity 3s ease-in-out 2s, transform 2s ease-in-out 2s;
-
-}
-
-.Estefsar .ImgRow img.SmallOne {
-    transform: translate(50%, 50%);
-    opacity: 0;
-    transition: transform 2s ease, opacity 3s ease !important;
-}
-
-.Estefsar.active .ImgRow img.SmallOne {
-    transform: translate(0%, 0%);
-    opacity: 1;
-}
-
-.Estefsar .ImgRow img.SmallTwo {
-    transform: translate(-50%, 50%);
-    opacity: 0;
-    transition: transform 2s ease, opacity 3s ease !important;
-}
-
-.Estefsar.active .ImgRow img.SmallTwo {
-    opacity: 1;
-    transform: translate(0%, 0%);
-
-}
-
-.Estefsar .ImgRow img.bigImg {
-    transform: translate(0%, 50%);
-    opacity: 0;
-    transition: transform 2s ease, opacity 3s ease !important;
-}
-
-.Estefsar.active .ImgRow img.bigImg {
-    opacity: 1;
-    transform: translate(0%, 0%);
-
-}
-
-
-.OverflowHidden {
-    overflow: hidden;
-    position: relative
-}
-
-.header .HeaderText a.ServicesLink {
-    transform: translateX(150%);
-    transition: 2s ease all !important;
-    transition-delay: 2s !important;
-}
-
-.header.active .HeaderText a.ServicesLink {
-    transform: translateX(0px);
-}
-
-.header .HeaderText h1, .header .HeaderText h2 {
-    transform: translateY(400%);
-    transition: 2s ease all;
-    transition-delay: 2s;
-}
-
-.header.active .HeaderText h2, .header.active .HeaderText h1 {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.header.active .HeaderText img {
-    width: 45% !important;
-}
-
-.header .pinkRectangle {
-    transform: translateX(-150%);
-    transition: 2s ease all;
-    opacity: 1 !important;
-}
-
-.header .ImagePart img {
-    transform: translateX(-150%);
-    transition: 2s ease all;
-    opacity: 1;
-    transition-delay: 2s;
-
-}
-
-.header.active .pinkRectangle {
-    transform: translateX(0);
-}
-
-.header.active .ImagePart img {
-    transform: translateX(0);
-}
-
-.header .blueRectangle {
-    transform: translateY(-150%);
-    transition: 2s ease all;
-    opacity: 1;
-}
-
-.header.active .blueRectangle {
-    transform: translateY(0);
-}
-
-.Values .ParaTitle {
-    transition: 1.5s ease all;
-    transform: translateX(150px);
-}
-
-.Values .Sart, section.BlogCards .carousel {
-    transition: 1.5s ease all;
-    transform: translateX(150px);
-    opacity: 0;
-}
-
-.Values.active .ParaTitle, .Values.active .Paragraph, section.BlogCards.active .carousel, .Values.active .Services ul, .Values.active .Sart {
-    transform: translateX(0px);
-    opacity: 1;
-}
-
-.Values .Services ul {
-    opacity: 0;
-}
-
-.Values .Paragraph, .Values .Services ul {
-    transition: 3.5s ease all;
-    transform: translateX(150px);
-}
-
-.footer .FooterRow img, .footer .FooterRow a {
-    transform: translateX(150%);
-    transition: 1.5s ease all;
-}
-
-.footer .FooterRow .socialMedia a, .footer .FooterRow p {
-    transform: translateX(-150%);
-    transition: 2.5s ease all;
-}
-
-.footer.active .FooterRow img, .footer.active .FooterRow a, .footer.active .FooterRow .socialMedia a, .footer.active .FooterRow p {
-    transform: translateX(0);
-    opacity: 1;
-}
-
-section.Partners {
-    transform: translateY(-150px);
-    transition: 0.5s ease all;
-}
-
-.Documentations .TopPart, .Documentations .IMGPart, .ArtSection .TopPart, .ArtSection .IMGPart, .Research .TopPart, .Research .IMGPart {
-    transition: 1.5s ease all;
-}
-
-.Documentations .TopPart {
-    transform: translateX(-150%);
-
-}
-
-.ArtSection .TopPart, .Research .TopPart {
-    transform: translateY(150%);
-}
-
-.ArtSection.active .TopPart, .Research.active .TopPart {
-    transform: translateX(0);
-    opacity: 1;
-
-}
-
-.ArtSection .IMGPart {
-    transform: translateX(-150%);
-
-}
-
-.Documentations .IMGPart, .Research .IMGPart {
-    transform: translateX(150%);
-
-}
-
-.Documentations.active .TopPart, .Documentations.active .IMGPart, .ArtSection.active .IMGPart, .Research.active .IMGPart {
-    transform: translateX(0%);
-    opacity: 1;
-}
-
-
-section.Partners .card {
-    transform: translateY(150%);
-    transition: 2s ease all;
-
-}
-
-section.Partners.active .card {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-section.Partners.active {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.BigImg img {
-    transform: translateX(-150%);
-    transition: 3.5s ease all;
-}
-
-.header .MiddlePattern.BackImg, .header .SidePattern.BackImg {
-    opacity: 1;
-}
-
-.header .MiddlePattern img, .header .SidePattern {
-    transition: 3s ease all;
-}
-
-.header.active .MiddlePattern img, .header.active .SidePattern {
-    transform: rotate(180deg);
-    opacity: 1;
-}
-
-.active .BigImg img {
-    transform: translateX(0);
-    opacity: 1;
-}
-
-
-
-section.Sponsers .Title, section.Sponsers img {
-    transform: translateY(150%);
-
-}
-
-section.Sponsers .Title {
-    transition: 1s ease all;
-}
-
-section.Sponsers img {
-    transition: 2s ease all;
-}
-
-section.Sponsers.active .Title, section.Sponsers.active img {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.NoBigAnim {
-    transform: translateX(0px) !important;
-    opacity: 1;
-    transition: none;
-}
-
-/*********************
-*********************
-End Top Animation
-*********************
-*********************/
-
-
-
-/***************************************************************************************
-****************************************************************************************
-*********************************************** Media***********************************
-****************************************************************************************
-****************************************************************************************/
-@media (min-width: 1400px) {}
-
-@media (max-width: 1400px) {}
-
-@media (max-width: 1200px) {}
-
-@media (max-width: 991px) {
-    nav.navbar .navbar-collapse .navbar-nav .nav-link {
-        font-size: 30px;
-        margin-bottom: 40px;
-        margin-left: 0px;
-    }
-
-
-    .navbar-nav {
-        background-color: white;
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    nav.navbar .sideNavButtons, nav.navbar .navbar-brand {
-        z-index: 10000;
-    }
-
-    nav.navbar .navbar-collapse {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        background-color: black;
-        transform: translate(-50%, -50%);
-        width: 100vw;
-    }
-
-
-
-    footer.footer .FooterRow {
-        flex-direction: column;
-    }
-
-    footer.footer .footerItem {
-        margin-bottom: 10px;
-    }
-
-
-}
-
-@media (max-width: 767px) {
-    nav.navbar .navbar-collapse .navbar-nav .nav-link {
-        font-size: 30px;
-        margin-bottom: 40px;
-    }
-
-
-    .LogoSocialFooter {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .socialMedia {
-        margin-right: 0 !important;
-    }
-
-    nav.navbar .ContactSartBtn {
-        height: 40px;
-        padding: 12px 15px;
-        font-size: 18px;
-    }
-
-    nav.navbar .ContactSartBtn img {
-        width: 30px;
-    }
-
-    header.header h1 .HeaderTitle {
-        font-size: 35px;
-    }
-
-    h1 .YellowCircle {
-        left: 25%;
-    }
-    h1 .YellowCircle img{
-        width:40px;
-    }
-    footer.footer img{
-        width:90px;
-    }
-    header.header h2 {
-        font-size: 25px;
-        margin-top: 20px;
-    }
-
-    .CarouselPart {
-        height: 20vh;
-    }
-
-    .CarouselDot {
-        width: 9px;
-        height: 9px;
-    }
-
-    .SectionTitle {
-        font-size: 30px;
-        margin-bottom: 5px !important;
-    }
-
-    section.BlogCards .YellowCircle {
-        left: 25%;
-    }
-
-    .Paragraph {
-        font-size: 16px;
-    }
-
-
-    section.Feedback .GreyBox .SmallText {
-        font-size: 14px;
-    }
-
-    section.Feedback .GreyBox .BigText {
-        font-size: 20px;
-    }
-
-    .SectionTitle .YellowCircle {
-        left: 30%;
-        width: 50px;
-        transform: translate(-4%, -50%);
-    }
-
-    section.Estefsar .ImagesPart .ImgRow .SmallImg {
-        height: unset;
-        width: 27% !important;
-    }
-
-    section.Estefsar .ImagesPart .ImgRow .bigImg {
-        width: 46%;
-    }
-
-    section.Estefsar .ImagesPart .PuprleBG {
-
-        height: 75px;
-    }
-
-    footer.footer .Footerrow {
-        flex-direction: column;
-    }
-
-    section.Estefsar .YellowCircle {
-        left: 17%;
-    }
-
-    section.AboutUs .TextInImage .TextPart {
-        width: 90%;
-    }
-
-    section.AboutUs .TextInImage .TextPart img {
-        width: 100px;
-    }
-
-    section.AboutUs .TextInImage .TextPart .TextBigSize {
-        font-size: 12px;
-    }
-}
-
-
-@media (max-width: 575px) {
-
-    nav.navbar .navbar-collapse .navbar-nav .nav-link {
-        font-size: 25px;
-        margin-bottom: 45px;
-    }
-
-
-}
+header.header button.HeaderButton:hover{
+    transform: scale(1.1);
+}
+header.header .carousel-indicators button{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #3b7b8b;
+    margin-left: 10px;
+}
+
+/***********
+***********
+End header
+***********
+***********/
+
+
+/***********
+***********
+footer
+***********
+***********/
+footer.footer{
+    background-image: url(../images/FooterBg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+footer.footer .BigText{
+    font-size: 25px;
+    color: white;
+}
+footer.footer .SmallText{
+    color: white;
+    font-size: 18px;
+    line-height: 35px;
+}
+/***********
+***********
+End footer
+***********
+***********/
