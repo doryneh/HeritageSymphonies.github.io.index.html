@@ -1,6 +1,6 @@
 @font-face {
     font-family: Lifta;
-    src: url(../fonts/Lifta-Black.otf);
+    src: url(../fonts/SFMada-Bold.otf);
 }
 @font-face {
     font-family: RowdiesLight;
@@ -23,7 +23,10 @@ body{
 }
 
 
-
+.SectionTitle {
+    font-size: 40px;
+    color: #EA6852;
+}
 /***********
 ***********
 Navbar
@@ -88,6 +91,18 @@ header.header .carousel-indicators button{
 /***********
 ***********
 End header
+***********
+***********/
+
+/***********
+***********
+About The Project
+***********
+***********/
+
+/***********
+***********
+End About The Project
 ***********
 ***********/
 
