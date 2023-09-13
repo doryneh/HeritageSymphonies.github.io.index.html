@@ -51,6 +51,9 @@ body{
 .WhiteText{
     color: white;
 }
+.BlackText{
+    color: black;
+}
 .paragraph{
     font-size: 20px;
     line-height: 35px;
@@ -72,7 +75,12 @@ body{
 .SmallRadiusBorders{
     border-radius: 5px;
 }
-
+button{
+    transition: 0.3s ease all;
+}
+button:hover{
+    filter: brightness(90%);
+}
 /***********
 ***********
 Navbar
@@ -223,6 +231,65 @@ section.Gallery .container {
 End Gallery
 ***********
 ***********/
+
+/***********
+***********
+Latest News
+***********
+***********/
+section.LatestNews {
+    text-decoration: none;
+}
+
+section.LatestNews   .card {
+    background-color: transparent;
+    border: none;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    background-color: white;
+    filter: drop-shadow(2px 5px 8px rgba(0, 0, 0, 0.20));
+border-radius: 5px;
+transition: 0.5s ease all;
+opacity: 1;
+transform: scale(1);
+}
+section.LatestNews   .card:hover{
+    transform: scale(1.05) ;
+    opacity: 1;
+}
+
+
+section.LatestNews   .card .ImgContainer {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+section.LatestNews   .card img {
+    border-radius: 5px;
+    transition: 0.5s ease all;
+}
+
+section.LatestNews   .card:hover img {
+    transform: scale(1.2);
+}
+section.LatestNews .BlogText{
+    max-height: 2em; 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+section.LatestNews .Time{
+    opacity: 0.5;
+    font-size: 16px !important;
+}
+/***********
+***********
+End Latest News
+***********
+***********/
+
 
 
 
