@@ -2,23 +2,27 @@
     font-family: SFMada;
     src: url(../fonts/SFMada-Bold.otf);
 }
+
 @font-face {
     font-family: RowdiesLight;
     src: url(../fonts/Rowdies-Bold.ttf);
 }
-body{
+
+body {
     direction: rtl;
     font-family: SFMada;
 }
 
-.TopNav{
+.TopNav {
     height: fit-content;
 }
-.TopNav img{
+
+.TopNav img {
     height: 100%;
     width: 200px;
 }
-.TopNav img.Logo{
+
+.TopNav img.Logo {
     width: 350px;
 }
 
@@ -27,86 +31,108 @@ body{
     font-size: 55px;
     font-weight: bolder;
 }
-.OrangeBg{
+
+.OrangeBg {
     background-color: #EA6852;
 }
-.MintGreenBg{
+
+.MintGreenBg {
     background-color: #3b7b8b;
 }
-.OrangeText{
+
+.OrangeText {
     color: #EA6852;
 }
-.OrangeBorders{
+
+.OrangeBorders {
     border: 1px solid #EA6852;
 }
-.MintGreenText{
+
+.MintGreenText {
     color: #3b7b8b;
 }
-.WhiteBg{
+
+.WhiteBg {
     background-color: white;
 }
-.MintGreenBorders{
+
+.MintGreenBorders {
     border: 1px solid #3b7b8b;
 }
-.WhiteText{
+
+.WhiteText {
     color: white;
 }
-.BlackText{
+
+.BlackText {
     color: black;
 }
-.paragraph{
+
+.paragraph {
     font-size: 20px;
     line-height: 35px;
 }
-.Texts{
+
+.Texts {
     font-size: 25px;
     line-height: 45px;
 }
-.SmallText{
+
+.SmallText {
     font-size: 18px;
     line-height: 25px;
 }
-.BoldText{
+
+.BoldText {
     font-weight: bolder;
 }
-.BigRadiusBorders{
+
+.BigRadiusBorders {
     border-radius: 20px;
 }
-.SmallRadiusBorders{
+
+.SmallRadiusBorders {
     border-radius: 5px;
 }
-button{
+
+button {
     transition: 0.3s ease all;
 }
-button:hover{
+
+button:hover {
     filter: brightness(90%);
 }
+
 /***********
 ***********
 Navbar
 ***********
 ***********/
-nav.navbar{
+nav.navbar {
     background-image: url(../images/NavbarBg.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
-nav.navbar ul li{
+
+nav.navbar ul li {
     margin-left: 15px;
 }
-nav.navbar ul li a{
+
+nav.navbar ul li a {
     color: white;
     font-family: Lifta;
     font-weight: 600;
     font-size: 20px;
     transition: 0.2s ease all;
 }
-nav.navbar ul li a:hover{
+
+nav.navbar ul li a:hover {
     transform: scale(1.1);
     filter: brightness(90%);
     color: white;
 }
+
 /***********
 ***********
 End Navbar
@@ -118,7 +144,7 @@ End Navbar
 header
 ***********
 ***********/
-header.header button.HeaderButton{
+header.header button.HeaderButton {
     background-color: transparent;
     border: none;
     background-image: url(../images/ButtonBg.png);
@@ -131,10 +157,12 @@ header.header button.HeaderButton{
     background-position: center center;
     transition: 0.3s ease all;
 }
-header.header button.HeaderButton:hover{
+
+header.header button.HeaderButton:hover {
     transform: scale(1.1);
 }
-header.header .carousel-indicators button{
+
+header.header .carousel-indicators button {
     border-radius: 50%;
     width: 15px;
     height: 15px;
@@ -153,17 +181,18 @@ End header
 About The Project
 ***********
 ***********/
-section.AboutTheProject   .MusicPattern{
+section.AboutTheProject .MusicPattern {
     position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 20px;
     background-image: url(../images/MusicPattern.png);
     background-size: contain;
-    background-position: center center ;
+    background-position: center center;
     filter: brightness(0) invert(1);
     opacity: 0.1;
 }
+
 /***********
 ***********
 End About The Project
@@ -176,62 +205,130 @@ End About The Project
 Gallery
 ***********
 ***********/
-section.Gallery .overlay{
-    
-    top: 0%;
-    left: 0;
-    opacity: 0.2;
-    z-index: 0;
-    filter: brightness(0) invert(1);
+
+#Gallery .container-fluid, #Gallery .container-sm, #Gallery .container-md, #Gallery .container-lg, #Gallery .container-xl, #Gallery .container-xxl {
+    max-width: 1920px;
 }
 
-section.Gallery .container img {
-    width: 100%;
-    border: 10px solid #fefae0;
-    transition-duration: 1s;
-}
-
-section.Gallery .container .col-6:hover img {
-    border: 5px solid #fff;
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-filter: none;
-    filter: none;
-}
-
-section.Gallery  .Texts{
-    font-size: 35px;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    transition-duration: 1s;
-    padding: 5px 20px;
-    color: #3b7b8b;
-    background-color: white;
-}
-section.Gallery .col-6:hover .Texts{
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-filter: none;
-    filter: none;
-}
-
-section.Gallery .container {
+#Gallery .container-fluid .Gallery-box, #Gallery .container-sm .Gallery-box, #Gallery .container-md .Gallery-box, #Gallery .container-lg .Gallery-box, #Gallery .container-xl .Gallery-box, #Gallery .container-xxl .Gallery-box {
     position: relative;
-    z-index: 10;
+    display: block;
 }
 
+#Gallery .container-fluid .Gallery-box .Gallery-box-caption, #Gallery .container-sm .Gallery-box .Gallery-box-caption, #Gallery .container-md .Gallery-box .Gallery-box-caption, #Gallery .container-lg .Gallery-box .Gallery-box-caption, #Gallery .container-xl .Gallery-box .Gallery-box-caption, #Gallery .container-xxl .Gallery-box .Gallery-box-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background: rgba(244, 98, 58, 0.9);
+    transition: opacity 0.25s ease;
+    text-align: center;
+}
 
+#Gallery .container-fluid .Gallery-box .Gallery-box-caption .project-category, #Gallery .container-sm .Gallery-box .Gallery-box-caption .project-category, #Gallery .container-md .Gallery-box .Gallery-box-caption .project-category, #Gallery .container-lg .Gallery-box .Gallery-box-caption .project-category, #Gallery .container-xl .Gallery-box .Gallery-box-caption .project-category, #Gallery .container-xxl .Gallery-box .Gallery-box-caption .project-category {
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#Gallery .container-fluid .Gallery-box .Gallery-box-caption .project-name, #Gallery .container-sm .Gallery-box .Gallery-box-caption .project-name, #Gallery .container-md .Gallery-box .Gallery-box-caption .project-name, #Gallery .container-lg .Gallery-box .Gallery-box-caption .project-name, #Gallery .container-xl .Gallery-box .Gallery-box-caption .project-name, #Gallery .container-xxl .Gallery-box .Gallery-box-caption .project-name {
+    font-size: 1.2rem;
+}
+
+#Gallery .container-fluid .Gallery-box:hover .Gallery-box-caption, #Gallery .container-sm .Gallery-box:hover .Gallery-box-caption, #Gallery .container-md .Gallery-box:hover .Gallery-box-caption, #Gallery .container-lg .Gallery-box:hover .Gallery-box-caption, #Gallery .container-xl .Gallery-box:hover .Gallery-box-caption, #Gallery .container-xxl .Gallery-box:hover .Gallery-box-caption {
+    opacity: 1;
+}
+
+#Gallery .container-fluid .Gallery-box .Gallery-box-caption, #Gallery .container-sm .Gallery-box .Gallery-box-caption, #Gallery .container-md .Gallery-box .Gallery-box-caption, #Gallery .container-lg .Gallery-box .Gallery-box-caption, #Gallery .container-xl .Gallery-box .Gallery-box-caption, #Gallery .container-xxl .Gallery-box .Gallery-box-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    opacity: 0;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background: rgba(244, 98, 58, 0.9);
+    transition: opacity 0.25s ease 0s;
+}
+
+#Gallery .portfolio-box .portfolio-box-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: #ea6952cb;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    opacity: 0;
+    transition: 0.5s ease all;
+}
+
+#Gallery .portfolio-box {
+    transition: 0.5s ease all;
+
+}
+
+#Gallery .portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    transform: translateY(-50%);
+    height: fit-content;
+    background-color: white;
+    width: fit-content;
+    opacity: 1;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#exampleModal .modal-dialog {
+    max-width: 65%;
+}
+
+#exampleModal .modal-dialog .btn-close {
+    background-color: white;
+    opacity: 1;
+    width: 25px;
+    height: 25px;
+}
 
 /***********
 ***********
 End Gallery
 ***********
 ***********/
-
+.AboutMohammed{
+    background-image: url(../images/DivBg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.AboutMohammed .overlay{
+    background-color: rgba(0, 0, 0, 0.541);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 /***********
 ***********
 Latest News
@@ -241,87 +338,101 @@ section.LatestNews {
     text-decoration: none;
 }
 
-section.LatestNews   .card {
+section.LatestNews .card {
     background-color: transparent;
     border: none;
     justify-content: space-between;
-    padding-bottom: 30px;
     background-color: white;
-    filter: drop-shadow(2px 5px 8px rgba(0, 0, 0, 0.20));
-border-radius: 5px;
-transition: 0.5s ease all;
-opacity: 1;
-transform: scale(1);
-}
-section.LatestNews   .card:hover{
-    transform: scale(1.05) ;
+    transition: 0.5s ease all;
     opacity: 1;
+    transform: scale(1);
+    padding-right: 15px;
+}
+
+section.LatestNews .card:hover {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.445));
 }
 
 
-section.LatestNews   .card .ImgContainer {
+section.LatestNews .card .ImgContainer {
     width: 100%;
     height: fit-content;
     overflow: hidden;
-    border-radius: 5px;
+   
 }
 
-section.LatestNews   .card img {
-    border-radius: 5px;
-    transition: 0.5s ease all;
-}
 
-section.LatestNews   .card:hover img {
-    transform: scale(1.2);
-}
-section.LatestNews .BlogText{
-    max-height: 2em; 
+
+
+section.LatestNews .BlogText {
+    max-height: 2em;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-section.LatestNews .Time{
+
+section.LatestNews .Time {
     opacity: 0.5;
     font-size: 16px !important;
 }
+
 /***********
 ***********
 End Latest News
 ***********
 ***********/
 
-
-
+/***********
+***********
+PArtenrs
+***********
+***********/
+section.Partners .PArtnerPart{
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+}
+/***********
+***********
+End PArtenrs
+***********
+***********/
 
 /***********
 ***********
 footer
 ***********
 ***********/
-footer.footer{
+footer.footer {
     background-image: url(../images/FooterBg.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
-footer.footer .BigText{
+
+footer.footer .BigText {
     font-size: 25px;
     color: white;
 }
-footer.footer .SmallText{
+
+footer.footer .SmallText {
     color: white;
     font-size: 18px;
     line-height: 35px;
 }
-footer.footer .BigText .socialIcons a{
+
+footer.footer .BigText .socialIcons a {
     margin-left: 15px;
     display: inline-block;
     transition: 0.3s ease all;
 }
-footer.footer .BigText .socialIcons a:hover{
+
+footer.footer .BigText .socialIcons a:hover {
     transform: scale(1.1);
     filter: brightness(90%);
 }
+
 /***********
 ***********
 End footer

@@ -116,30 +116,32 @@
   <!--About The Project-->
   <section class="AboutTheProject py-md-5 py-4" id="AboutTheProject">
     <div class="container">
-      <div class="SectionTitle OrangeText text-center ">
-        حول المشروع
-      </div>
+
       <div class="row  mt-4">
-        <div class="col-md-8">
+      
+        <div class="col-md-4 d-flex align-items-center justify-content-center">
+          <img src="images/TextPartimage.jpg" alt="TextPartimage" class="w-100">
+        </div>
+        <div class="col-md-8 d-flex justify-content-between flex-column" >
+            <div class="SectionTitle OrangeText ">
+              حول المشروع
+            </div>
           <div
-            class="position-relative MintGreenBg WhiteText p-4 paragraph SmallRadiusBorders d-flex justify-content-center align-items-start flex-column h-100">
-            <div class="MusicPattern"></div>
+            class="position-relative   p-4 paragraph  d-flex justify-content-center align-items-start flex-column">
             مشروع السيمفونيات التراثية هو مشروع طموح لدمج األلوان الفنية التراثية في الموسيقى العالمية؛ حيث يتم
             تأليف مقطوعات موسيقية مستوحاة من ألوان تراثية أصيلة ووضعها في قالب موسيقي عصري، ثم تقديمها
             في حفالت موسيقيا (أوركسترا).
 
           </div>
-
-        </div>
-        <div class="col-md-4">
           <div
-            class="OrangeBorders OrangeText p-4 paragraph SmallRadiusBorders d-flex  justify-content-between align-items-start flex-column h-100">
-            وال تقتصر الحفلة الموسيقية عىل تقديم مجموعة من الموسيقيين لمعزوفة سيمفونية فحسب؛ بل يراعي
-            المشروع ظهور الفرقة الموسيقية بلمسة من ثقافة بالدها، والمتمثلة في اآلالت الموسيقية واإليقاعات التراثية
-            والرقص الشعبي، واللباس التقليدي
-          </div>
+          class="  p-4 paragraph  d-flex  justify-content-between align-items-start flex-column">
+          وال تقتصر الحفلة الموسيقية عىل تقديم مجموعة من الموسيقيين لمعزوفة سيمفونية فحسب؛ بل يراعي
+          المشروع ظهور الفرقة الموسيقية بلمسة من ثقافة بالدها، والمتمثلة في اآلالت الموسيقية واإليقاعات التراثية
+          والرقص الشعبي، واللباس التقليدي
+        </div>
 
         </div>
+      
       </div>
 
     </div>
@@ -147,55 +149,266 @@
   <!--End About The Project-->
 
 
-  <!--Gallery-->
+  <!-- Portfolio-->
 
-  <section class="Gallery MintGreenBg py-md-5 py-4 position-relative" id="Gallery">
-    <div class="overlay position-absolute"><img src="images/musicbgGallery.png" alt="musicbgGallery"></div>
-    <div class="container">
-      <div class="SectionTitle WhiteText text-center mb-5">
-        معرض صور
-      </div>
-      <div class="row">
-        <div class="col-6 position-relative">
-          <img src="https://static.pexels.com/photos/52500/horse-herd-fog-nature-52500.jpeg" alt="Herd of horses">
-          <div class="Texts position-absolute ">الحفالت السابقة</div>
+
+
+  <!--Modal-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-header bg-transparent border-0">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="col-6 position-relative">
-          <img src="https://static.pexels.com/photos/66898/elephant-cub-tsavo-kenya-66898.jpeg" alt="Baby Elephant">
-          <div class="Texts position-absolute ">االنتاجات المرئية </div>
-
+        <div class="modal-body bg-transparent border-0 d-flex justify-content-center align-items-center">
+          <img src="images/portfolio/fullsize/1.jpg" alt="1.jpg" style="width: 85%;">
         </div>
-        <div class="col-6 mt-4 position-relative">
-          <img src="https://static.pexels.com/photos/213399/pexels-photo-213399.jpeg" alt="Koi Fish">
-          <div class="Texts position-absolute ">محمد القحوم</div>
-
-        </div>
-        <div class="col-6 mt-4 position-relative">
-          <img src="https://static.pexels.com/photos/133459/pexels-photo-133459.jpeg" alt="Lemur">
-          <div class="Texts position-absolute ">الفريق الموسيقي. </div>
-
-        </div>
-
 
       </div>
     </div>
-  </section>
-  <!--End Gallery-->
+  </div>
+  <!--End Modal -->
+
+
+  <div class="Gallery py-5" id="Gallery">
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+        <div id="Gellerycarousel" class="carousel slide" data-bs-ride="carousel">
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row g-0">
+                <div class="col-lg-4 col-sm-6 position-relative">
+                  <a class="portfolio-box" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Project Name">
+                    <img class="img-fluid" src="images/portfolio/thumbnails/1.jpg" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 position-relative">
+                  <a class="portfolio-box" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Project Name">
+                    <img class="img-fluid" src="images/portfolio/thumbnails/2.jpg" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 position-relative">
+                  <a class="portfolio-box" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Project Name">
+                    <img class="img-fluid" src="images/portfolio/thumbnails/3.jpg" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-0">
+                <div class="col-lg-4 col-sm-6 position-relative">
+                  <a class="portfolio-box" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Project Name">
+                    <img class="img-fluid" src="images/portfolio/thumbnails/1.jpg" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 position-relative">
+                  <a class="portfolio-box" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Project Name">
+                    <img class="img-fluid" src="images/portfolio/thumbnails/2.jpg" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 position-relative">
+                  <a class="portfolio-box" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Project Name">
+                    <img class="img-fluid" src="images/portfolio/thumbnails/3.jpg" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-0">
+                <div class="col-lg-4 col-sm-6 position-relative">
+                  <a class="portfolio-box" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Project Name">
+                    <img class="img-fluid" src="images/portfolio/thumbnails/1.jpg" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 position-relative">
+                  <a class="portfolio-box" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Project Name">
+                    <img class="img-fluid" src="images/portfolio/thumbnails/2.jpg" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 position-relative">
+                  <a class="portfolio-box" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Project Name">
+                    <img class="img-fluid" src="images/portfolio/thumbnails/3.jpg" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <div id="Gellerycarousel2" class="carousel slide" data-bs-ride="carousel">
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row g-0">
+                <div class="col-lg-4 col-sm-6 position-relative">
+                  <a class="portfolio-box" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Project Name">
+                    <img class="img-fluid" src="images/portfolio/thumbnails/1.jpg" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 position-relative">
+                  <a class="portfolio-box" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Project Name">
+                    <img class="img-fluid" src="images/portfolio/thumbnails/2.jpg" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 position-relative">
+                  <a class="portfolio-box" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Project Name">
+                    <img class="img-fluid" src="images/portfolio/thumbnails/3.jpg" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-0">
+                <div class="col-lg-4 col-sm-6 position-relative">
+                  <a class="portfolio-box" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Project Name">
+                    <img class="img-fluid" src="images/portfolio/thumbnails/1.jpg" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 position-relative">
+                  <a class="portfolio-box" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Project Name">
+                    <img class="img-fluid" src="images/portfolio/thumbnails/2.jpg" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 position-relative">
+                  <a class="portfolio-box" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Project Name">
+                    <img class="img-fluid" src="images/portfolio/thumbnails/3.jpg" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-0">
+                <div class="col-lg-4 col-sm-6 position-relative">
+                  <a class="portfolio-box" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Project Name">
+                    <img class="img-fluid" src="images/portfolio/thumbnails/1.jpg" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 position-relative">
+                  <a class="portfolio-box" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Project Name">
+                    <img class="img-fluid" src="images/portfolio/thumbnails/2.jpg" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 position-relative">
+                  <a class="portfolio-box" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Project Name">
+                    <img class="img-fluid" src="images/portfolio/thumbnails/3.jpg" alt="..." />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <button class="carousel-control-prev ms-5" type="button" data-bs-target="#Gellerycarousel, #Gellerycarousel2">
+            <i class="fa-solid fa-chevron-right" style="color: #3b7b8b;"></i>
+          </button>
+
+          <button class="carousel-control-next me-5" type="button" data-bs-target="#Gellerycarousel, #Gellerycarousel2">
+            <i class="fa-solid fa-chevron-left" style="color: #3b7b8b;"></i>
+
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Call to action-->
 
   <!--Video Part-->
   <section class="VideoPart py-5" id="VideoPart">
     <div class="container justify-content-center d-flex flex-column">
-      <iframe width="1300" height="746" src="https://www.youtube.com/embed/bdKD9shZE7Y?si=VeClUD3Z-uy7CWU1"
+      <iframe width="100%" height="746" src="https://www.youtube.com/embed/bdKD9shZE7Y?si=VeClUD3Z-uy7CWU1"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
-      <div class="SectionTitle OrangeText my-4">
+
+
+  </section>
+  <!--End Video Part-->
+
+  <div class="AboutMohammed position-relative py-4">
+    <div class="overlay position-absolute"></div>
+    <div class="container" style="z-index: 10; position: relative;">
+
+      <div class="SectionTitle WhiteText my-4">
         محمد القحوم
       </div>
-      <div class="Texts">
+      <div class="paragraph WhiteText" >
         يمتلك المايسترو محمد القحوم خبرة طويلة في التأليف الموسيقي التراثي، ودمجه مع الموسيقى العالمية.
         ألّف سيمفونيات، وقاد حفالت أوركسترالية في كل من ماليزيا، مصر، الكويت، اإلمارات، وفرنسا.
-        <br>
         <br>
         كما
         ألّف القحوم ووزّع العديد من الهويات الموسيقية لألعمال الدرامية واألغاني، إضافة إىل تعاونه مع العديد من
@@ -207,143 +420,277 @@
       <div class="d-flex justify-content-end">
         <button class="OrangeBg OrangeBorders WhiteText SmallRadiusBorders px-5 py-2 Texts mt-4"
           style="width: fit-content;">إقرأ المزيد</button>
-
       </div>
-  </section>
-  <!--End Video Part-->
+    </div>
 
-
+  </div>
   <!-- Latest News-->
   <section class="LatestNews py-5" id="LatestNews">
     <div class="container">
       <div class="SectionTitle text-center MintGreenText mb-4"> آخر الأخبار</div>
       <div class="row">
-        <div class="col-md-4">
-          <div class="card h-100 ">
-            <div class="ImgContainer">
-              <img src="images/BlogImage1.png" alt="BlogImage1.png" class="w-100">
-            </div>
-            <div class="card-body pb-1">
-              <div class="Texts BoldText MintGreenText mt-3 ">
-                عنوان الخبر.
+        <div class="col-md-6">
+          <div class="card">
+            <div class="row">
+              <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                <div class="ImgContainer">
+                  <img src="images/BlogImage1.png" alt="BlogImage1.png" class="w-100">
+                </div>
               </div>
-              <div class="paragraph BlackText BoldFont mt-2 BlogText">
+              <div class="col-lg-8">
+                <div class="card-body ">
+                  <div class="Texts BoldText MintGreenText ">
+                    عنوان الخبر.
+                  </div>
+                  <div class="paragraph BlackText BoldFont mt-2 BlogText">
 
 
-                الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟
-                الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟ الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟ الدوران
-                الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟
+                    الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟
+                    الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟ الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟
+                    الدوران
+                    الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟
+                  </div>
+
+                  <div class="paragraph BlackText Time mt-2">31 يوليو 2022
+                    5 دقيقة</div>
+                  <a href=""><button
+                      class="MintGreenBg WhiteText SmallRadiusBorders px-4 py-1 w-100 BoldText border-0 paragraph mt-3">المزيد</button></a>
+                </div>
               </div>
-
-              <div class="paragraph BlackText Time mt-2">31 يوليو 2022
-                5 دقيقة</div>
-              <a href=""><button
-                  class="OrangeBg WhiteText SmallRadiusBorders px-4 py-1 w-100 BoldText border-0 paragraph mt-3">المزيد</button></a>
             </div>
+
+
+          </div>
+
+        </div>
+        <div class="col-md-6  mt-4 mt-md-0">
+          <div class="card">
+            <div class="row">
+              <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                <div class="ImgContainer">
+                  <img src="images/BlogImage1.png" alt="BlogImage1.png" class="w-100">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="card-body ">
+                  <div class="Texts BoldText MintGreenText ">
+                    عنوان الخبر.
+                  </div>
+                  <div class="paragraph BlackText BoldFont mt-2 BlogText">
+
+
+                    الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟
+                    الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟ الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟
+                    الدوران
+                    الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟
+                  </div>
+
+                  <div class="paragraph BlackText Time mt-2">31 يوليو 2022
+                    5 دقيقة</div>
+                  <a href=""><button
+                      class="MintGreenBg WhiteText SmallRadiusBorders px-4 py-1 w-100 BoldText border-0 paragraph mt-3">المزيد</button></a>
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </div>
-        <div class="col-md-4  mt-4 mt-md-0">
-          <div class="card h-100 ">
-            <div class="ImgContainer">
-              <img src="images/BlogImage1.png" alt="BlogImage1.png" class="w-100">
-            </div>
-            <div class="card-body pb-1">
-              <div class="Texts BoldText MintGreenText mt-3 ">
-                عنوان الخبر.
+        <div class="col-md-6  mt-4">
+          <div class="card">
+            <div class="row">
+              <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                <div class="ImgContainer">
+                  <img src="images/BlogImage1.png" alt="BlogImage1.png" class="w-100">
+                </div>
               </div>
-              <div class="paragraph BlackText BoldFont mt-2 BlogText">
+              <div class="col-lg-8">
+                <div class="card-body ">
+                  <div class="Texts BoldText MintGreenText ">
+                    عنوان الخبر.
+                  </div>
+                  <div class="paragraph BlackText BoldFont mt-2 BlogText">
 
 
-                الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟
-                الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟ الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟ الدوران
-                الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟
+                    الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟
+                    الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟ الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟
+                    الدوران
+                    الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟
+                  </div>
+
+                  <div class="paragraph BlackText Time mt-2">31 يوليو 2022
+                    5 دقيقة</div>
+                  <a href=""><button
+                      class="MintGreenBg WhiteText SmallRadiusBorders px-4 py-1 w-100 BoldText border-0 paragraph mt-3">المزيد</button></a>
+                </div>
               </div>
-
-              <div class="paragraph BlackText Time mt-2">31 يوليو 2022
-                5 دقيقة</div>
-              <a href=""><button
-                  class="OrangeBg WhiteText SmallRadiusBorders px-4 py-1 w-100 BoldText border-0 paragraph mt-3">المزيد</button></a>
-
             </div>
+
+
           </div>
         </div>
-        <div class="col-md-4 mt-4 mt-md-0">
-          <div class="card h-100 ">
-            <div class="ImgContainer">
-              <img src="images/BlogImage1.png" alt="BlogImage1.png" class="w-100">
-            </div>
-            <div class="card-body pb-1">
-              <div class="Texts BoldText MintGreenText mt-3 ">
-                عنوان الخبر.
+        <div class="col-md-6  mt-4">
+          <div class="card">
+            <div class="row">
+              <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                <div class="ImgContainer">
+                  <img src="images/BlogImage1.png" alt="BlogImage1.png" class="w-100">
+                </div>
               </div>
-              <div class="paragraph BlackText BoldFont mt-2 BlogText">
+              <div class="col-lg-8">
+                <div class="card-body ">
+                  <div class="Texts BoldText MintGreenText ">
+                    عنوان الخبر.
+                  </div>
+                  <div class="paragraph BlackText BoldFont mt-2 BlogText">
 
 
-                الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟
-                الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟ الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟ الدوران
-                الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟
+                    الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟
+                    الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟ الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟
+                    الدوران
+                    الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟
+                  </div>
+
+                  <div class="paragraph BlackText Time mt-2">31 يوليو 2022
+                    5 دقيقة</div>
+                  <a href=""><button
+                      class="MintGreenBg WhiteText SmallRadiusBorders px-4 py-1 w-100 BoldText border-0 paragraph mt-3">المزيد</button></a>
+                </div>
               </div>
-
-              <div class="paragraph BlackText Time mt-2">31 يوليو 2022
-                5 دقيقة</div>
-              <a href=""><button
-                  class="OrangeBg WhiteText SmallRadiusBorders px-4 py-1 w-100 BoldText border-0 paragraph mt-3">المزيد</button></a>
-
             </div>
+
+
           </div>
         </div>
+        <div class="col-md-6  mt-4">
+          <div class="card">
+            <div class="row">
+              <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                <div class="ImgContainer">
+                  <img src="images/BlogImage1.png" alt="BlogImage1.png" class="w-100">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="card-body ">
+                  <div class="Texts BoldText MintGreenText ">
+                    عنوان الخبر.
+                  </div>
+                  <div class="paragraph BlackText BoldFont mt-2 BlogText">
+
+
+                    الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟
+                    الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟ الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟
+                    الدوران
+                    الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟
+                  </div>
+
+                  <div class="paragraph BlackText Time mt-2">31 يوليو 2022
+                    5 دقيقة</div>
+                  <a href=""><button
+                      class="MintGreenBg WhiteText SmallRadiusBorders px-4 py-1 w-100 BoldText border-0 paragraph mt-3">المزيد</button></a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="col-md-6  mt-4">
+          <div class="card">
+            <div class="row">
+              <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                <div class="ImgContainer">
+                  <img src="images/BlogImage1.png" alt="BlogImage1.png" class="w-100">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="card-body ">
+                  <div class="Texts BoldText MintGreenText ">
+                    عنوان الخبر.
+                  </div>
+                  <div class="paragraph BlackText BoldFont mt-2 BlogText">
+
+
+                    الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟
+                    الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟ الدوران الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟
+                    الدوران
+                    الوظيفي: ماهو؟ وكيف يحلّه العمل المرن؟
+                  </div>
+
+                  <div class="paragraph BlackText Time mt-2">31 يوليو 2022
+                    5 دقيقة</div>
+                  <a href=""><button
+                      class="MintGreenBg WhiteText SmallRadiusBorders px-4 py-1 w-100 BoldText border-0 paragraph mt-3">المزيد</button></a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
   <!--End Latest News-->
 
   <!--Partners -->
-  <section class="Partners py-5" id="Partners">
+  <section class="Partners py-5 MintGreenBg" id="Partners">
     <div class="container">
-      <div class="SectionTitle text-center OrangeText mb-4">شركاؤنا</div>
+      <div class="SectionTitle text-center WhiteText mb-4">شركاؤنا</div>
       <div class="row">
         <div class="col-lg-3 col-6">
-          <img src="images/artPartners1.png" alt="artPartners1" class="w-100">
+          <div class="PArtnerPart">
+            <img src="images/artPartners1.png" alt="artPartners1" class="w-100">
+          </div>
         </div>
         <div class="col-lg-3 col-6">
-          <img src="images/artPartners1.png" alt="artPartners1" class="w-100">
-        </div>
+          <div class="PArtnerPart">
+            <img src="images/artPartners1.png" alt="artPartners1" class="w-100">
+          </div>        </div>
         <div class="col-lg-3 col-6 mt-4 mt-lg-0">
-          <img src="images/artPartners1.png" alt="artPartners1" class="w-100">
-        </div>
+          <div class="PArtnerPart">
+            <img src="images/artPartners1.png" alt="artPartners1" class="w-100">
+          </div>        </div>
         <div class="col-lg-3 col-6 mt-4 mt-lg-0">
-          <img src="images/artPartners1.png" alt="artPartners1" class="w-100">
-        </div>
+          <div class="PArtnerPart">
+            <img src="images/artPartners1.png" alt="artPartners1" class="w-100">
+          </div>
+                </div>
       </div>
     </div>
   </section>
   <!--End Partners-->
 
   <!--About THe Service-->
-  <section class="AboutTheService py-5" id="AboutTheService">
+  <section class="AboutTheService py-5 mb-4" id="AboutTheService">
     <div class="container">
-      <div class="SectionTitle text-center MintGreenText mb-4">لمحة عن الخدمة</div>
       <div class="row">
         <div class="col-lg-7">
+          <div class="SectionTitle MintGreenText mb-4">لمحة عن الخدمة</div>
+
           <div class="paragraph BlackText d-flex justify-content-center h-100 align-items-start mb-0 flex-column">
             نتيح لك فرصة الوصول اىل المواد التي تم إنتاجها لجميع فعاليات المشروع، ليسهل عليك نشرها في صفحاتك
             على مواقع التواصل االجتماعي، المواقع االخبارية والصحف.
-            <div class="paragraph OrangeBg SmallRadiusBorders WhiteText BoldText px-4  mt-4" style="width: fit-content;">تصفّح الخدمة</div>
+            <div class="paragraph OrangeBg SmallRadiusBorders WhiteText BoldText px-4  mt-4"
+              style="width: fit-content;">تصفّح الخدمة</div>
 
           </div>
         </div>
-        <div class="col-lg-5 d-flex justify-content-center">
-          <img src="images/googleDrive.png" alt="googleDrive" class="w-50">
+        <div class="col-lg-5 d-flex justify-content-center align-items-center h-100">
+          <img src="images/googleDrive.png" alt="googleDrive" class="w-50" style="height: fit-content;">
         </div>
       </div>
     </div>
   </section>
-<!--End About the Service-->
+  <!--End About the Service-->
 
 
   <!--Footer-->
-  <footer class="footer py-5" id="footer">
+  <footer class="footer pt-5 pb-3" id="footer">
     <div class="container py-md-4 py-0">
+      <div class="d-flex justify-content-between flex-column h-100">
+<div class="mb-5">
       <div class="BigText d-flex align-items-center justify-content-between">
         تواصل معنا
         <div class="socialIcons">
@@ -362,6 +709,10 @@
         إيميل info@Hsymphonies.com
       </div>
     </div>
+      <div class="paragraph WhiteText text-center">جميع الحقوق محفوظة لسنة2023</div>
+    </div>
+  </div>
+
   </footer>
   <!--End Footer-->
 

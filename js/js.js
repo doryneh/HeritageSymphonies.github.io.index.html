@@ -21,26 +21,20 @@ $(document).ready(function() {
 
 
 
- // Get all the cards
- var cards = $("section.LatestNews .card");
 
- // Add a hover event to each card
- cards.on("mouseenter", function() {
-   // Get the two other cards
-   var otherCards = cards.not(this);
 
-   // Scale the other cards down
-   otherCards.css("transform", "scale(0.95)");
 
-   // Set the other cards' opacity to 0.5
-   otherCards.css("opacity", 0.5);
- });
 
- // Add a mouseleave event to each card
- cards.on("mouseleave", function() {
-   // Reset the other cards
-   $(".card").css("transform", "scale(1)");
-   $(".card").css("opacity", 1);
- });
+  // Previous button click event
+  $('.carousel-control-prev').click(function() {
+    $('#Gellerycarousel').carousel('next');  // Run first carousel in the opposite direction
+    $('#Gellerycarousel2').carousel('prev'); // Run second carousel in the opposite direction
+  });
+
+  // Next button click event
+  $('.carousel-control-next').click(function() {
+    $('#Gellerycarousel').carousel('prev');  // Run first carousel in the opposite direction
+    $('#Gellerycarousel2').carousel('next'); // Run second carousel in the opposite direction
+  });
 });
 
