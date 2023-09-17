@@ -317,6 +317,12 @@ Gallery
 End Gallery
 ***********
 ***********/
+
+/***********
+***********
+About Mohammed
+***********
+***********/
 .AboutMohammed {
     background-image: url(../images/DivBg.jpg);
     background-size: cover;
@@ -348,6 +354,29 @@ End Gallery
     align-items: center;
     height: 100%;
 }
+/***********
+***********
+End About Mohammed
+***********
+***********/
+
+/***********
+***********
+Video Part
+***********
+***********/
+section.VideoPart .MoreAboutEvent svg{
+    transition: 0.5s ease all;
+}
+section.VideoPart .MoreAboutEvent:hover svg{
+    transform: translateX(-50px);
+}
+/***********
+***********
+End Video Part
+***********
+***********/
+
 
 /***********
 ***********
