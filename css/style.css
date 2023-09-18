@@ -501,6 +501,25 @@ End Our Talents
 ***********
 ***********/
 
+/***********
+***********
+Contact Us
+***********
+***********/
+section.ContactUsForm input,section.ContactUsForm  select,section.ContactUsForm  textarea{
+    direction: rtl;
+    border: 1px solid #3b7b8b !important;
+    box-shadow: none !important;
+    color: black;
+    outline: none !important;
+}
+
+/***********
+***********
+End Contact Us
+***********
+***********/
+
 
 /***********
 ***********
