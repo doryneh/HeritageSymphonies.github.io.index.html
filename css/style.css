@@ -1203,4 +1203,38 @@ nav.navbar .navbar-collapse ul a{
         font-size: 15px;
         text-align:center;
     }
+    .AboutMohammed.BigMohammedPart .carousel-item .Texts{
+        font-size: 16px;
+    }
+    .AboutMohammed.BigMohammedPart, .AboutMohammed.BigMohammedPart .carousel-item {
+        height: 43vh;
+    }
+    section.OurTalents figure figcaption .Texts{
+        font-size: 17px;
+    }
+    .SmallText {
+        font-size: 13px;
+        line-height: 18px;
+        text-align: center;
+    }
+    section.OurTalents figure figcaption .SmallText{
+        margin-bottom: 10px;
+    }
+    section.OurTalents figure figcaption .paragraph{
+        font-size: 14px;
+        line-height: 25px;
+    }
+    section.OurTalents figure figcaption a{
+        width: 15px;
+    }
+    .VideoPart  .MintGreenBg, .VideoPart  .OrangeBg{
+        padding: 30px 10px;
+    }
+    #AlbumCarousel .carousel-indicators {
+        bottom: unset;
+        top: -25px;
+    }
+   #AlbumCarousel{
+    padding-bottom: 20px;
+   }
 }
