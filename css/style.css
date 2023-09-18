@@ -1091,3 +1091,116 @@ footer.footer .BigText .socialIcons a:hover {
 End footer
 ***********
 ***********/
+
+
+/******************************************************************************************
+*******************************************************************************************
+******************************************Media********************************************
+*******************************************************************************************
+******************************************************************************************/
+@media(max-width:991px){
+    nav.navbar button.navbar-toggler{
+        color: white;
+        z-index: 999999999999999;
+    }
+    nav.navbar .navbar-collapse{
+        position: absolute;
+        height: 100vh;
+        width: 100vh;
+        top: 0;
+        left: 0;
+        background-color: #3b7b8b;
+        z-index: 100000;
+}
+nav.navbar .navbar-collapse ul{
+    height: 100%;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw !important;
+}
+nav.navbar .navbar-collapse ul{
+    z-index: 99999999;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+nav.navbar .navbar-collapse ul a{
+    margin-bottom: 20px;
+}
+.TextPartimage{
+    width: 75% !important;
+}
+}
+@media(max-width:575px){
+    .TopNav img.Logo{
+        width: 150px;
+    }
+    .TopNav img {
+        width: 100px;
+    }
+    header.header button.HeaderButton {
+
+        font-size: 14px;
+        width: 156px;
+
+    }
+    header.header .carousel-indicators {
+       
+        bottom: -65px;
+    }
+    .TextPartimage{
+        width: 50% !important;
+        margin-top: 30px;
+    }
+    .SectionTitle {
+        font-size: 40px;
+        text-align: center;
+    }
+    .paragraph {
+        font-size: 17px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .Texts {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        
+        padding: 5px;
+        font-size: 12px;
+    }
+    .VideoPart .container.justify-content-between {
+        flex-direction: column;
+    }
+    .VideoPart .container.justify-content-between iframe{
+        width: 100% !important;
+        height: unset !important;
+    }
+    .VideoPart .container.justify-content-between iframe:first-of-type{
+        margin-bottom: 20px;
+    }
+    section.LatestNews .card{
+        padding-right: 0px;
+        padding: 20px;
+    }
+    .ButtonNewsPage{
+        width: 100% !important;
+    }
+    footer.footer .BigText .socialIcons a{
+        margin-left: 10px;
+    }
+    footer.footer .BigText .socialIcons a img{
+        width: 30px;
+    }
+    footer.footer .BigText {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    footer.footer .SmallText {
+        font-size: 15px;
+        text-align:center;
+    }
+}
