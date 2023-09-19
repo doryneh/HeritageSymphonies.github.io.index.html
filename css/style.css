@@ -1140,6 +1140,9 @@ body.dark-mode section.Albums .player *{
 body.dark-mode .OurTeam  .card{
     background-color: #3b7b8b;
 }
+body.dark-mode header{
+    background-color: white;
+}
 /***********
 ***********
 end Dark Mode
@@ -1198,8 +1201,7 @@ nav.navbar .navbar-collapse ul a{
 
     }
     header.header .carousel-indicators {
-       
-        bottom: -65px;
+        bottom: -44px;
     }
     .TextPartimage{
         margin-top: 30px;
