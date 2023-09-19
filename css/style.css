@@ -1128,9 +1128,7 @@ nav.navbar .navbar-collapse ul{
 nav.navbar .navbar-collapse ul a{
     margin-bottom: 20px;
 }
-.TextPartimage{
-    width: 75% !important;
-}
+
 }
 @media(max-width:575px){
     .TopNav img.Logo{
@@ -1150,12 +1148,17 @@ nav.navbar .navbar-collapse ul a{
         bottom: -65px;
     }
     .TextPartimage{
-        width: 50% !important;
         margin-top: 30px;
+    }
+    #exampleModal .modal-dialog {
+        max-width: 100%;
     }
     .SectionTitle {
         font-size: 40px;
         text-align: center;
+    }
+    .BlogImg{
+        width: 100% !important;
     }
     .paragraph {
         font-size: 17px;
