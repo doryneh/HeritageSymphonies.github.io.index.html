@@ -13,6 +13,7 @@ body {
     font-family: SFMada;
 }
 
+
 .TopNav {
     height: fit-content;
 }
@@ -135,6 +136,21 @@ nav.navbar ul li a:hover {
     transform: scale(1.1);
     filter: brightness(90%);
     color: white;
+}
+nav.navbar .ButtonsPart select {
+    box-shadow: none !important;
+    border: 1px solid #3b7b8b !important;
+    outline: none !important;
+}
+nav.navbar .form-switch .form-check-input{
+    height: 20px;
+    width: 35px;
+    box-shadow: none;
+}
+nav.navbar .form-switch .form-check-input:checked{
+    background-color: #EA6852;
+    border:1px solid white;
+
 }
 
 /***********
@@ -1089,6 +1105,44 @@ footer.footer .BigText .socialIcons a:hover {
 /***********
 ***********
 End footer
+***********
+***********/
+
+/***********
+***********
+Dark Mode
+***********
+***********/
+body.dark-mode{
+    background-color: #254F59 !important;
+}
+body.dark-mode section.LatestNews .card{
+    background-color: #3b7b8b;
+}
+body.dark-mode nav.navbar select{
+    background-color: #3b7b8b;
+    border: 1px solid white !important;
+}
+body.dark-mode .AboutMohammed.BigMohammedPart .carousel-control-prev,body.dark-mode .AboutMohammed.BigMohammedPart .carousel-control-next{
+    background-color: #3b7b8b;
+    color: white;
+}
+body.dark-mode  .OrangeBg,body.dark-mode button.MintGreenBg {
+    background-color: #EA6852 !important;
+}
+body.dark-mode .paragraph.WhiteBg.OrangeText{
+    background-color: #EA6852 !important;
+    color: white !important;
+}
+body.dark-mode section.Albums .player *{
+    color: #3b7b8b !important;
+}
+body.dark-mode .OurTeam  .card{
+    background-color: #3b7b8b;
+}
+/***********
+***********
+end Dark Mode
 ***********
 ***********/
 
