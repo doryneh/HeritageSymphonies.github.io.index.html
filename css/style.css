@@ -1240,4 +1240,7 @@ nav.navbar .navbar-collapse ul a{
    #AlbumCarousel{
     padding-bottom: 20px;
    }
+   .googleDrive{
+    max-height: 155px !important;
+   }
 }

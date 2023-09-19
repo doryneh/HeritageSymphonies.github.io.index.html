@@ -227,7 +227,7 @@ Gallery
     text-align: center;
     opacity: 0;
     color: white;
-    background: #3b7b8beright 6 top 50%;
+    background: #3b7b8be6 ;
     transition: opacity 0.25s ease;
     text-align: center;
 }
@@ -259,7 +259,7 @@ Gallery
     opacity: 0;
     color: rgb(255, 255, 255);
     text-align: center;
-    background: #3b7b8beright 6 top 50%;
+    background: #3b7b8be6;
     transition: opacity 0.25s ease 0s;
 }
 
@@ -1235,5 +1235,8 @@ nav.navbar .navbar-collapse ul a{
     }
    #AlbumCarousel{
     padding-bottom: 20px;
+   }
+   .googleDrive{
+    max-height: 155px !important;
    }
 }
