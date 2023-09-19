@@ -145,20 +145,5 @@ progressBar.parent().on('click mousemove', function(e) {
 });
 
 
-
-
-// Retrieve the selected language from local storage
-  var selectedLanguage = localStorage.getItem('selectedLanguage');
-  if (selectedLanguage) {
-    $('#languageSelect').val(selectedLanguage);
-  }
-
-  // Update the selected language in local storage when the selection changes
-  $('#languageSelect').change(function() {
-    var selectedValue = $(this).val();
-    localStorage.setItem('selectedLanguage', selectedValue);
-  });
-
-
 });
 

@@ -1123,7 +1123,7 @@ body.dark-mode nav.navbar select{
     background-color: #3b7b8b;
     border: 1px solid white !important;
 }
-body.dark-mode .AboutMohammed.BigMohammedPart .carousel-control-prev,body.dark-mode .AboutMohammed.BigMohammedPart .carousel-control-next{
+body.dark-mode .AboutMohammed.BigMohammedPart .carousel-control-prev,body.dark-mode .AboutMohammed.BigMohammedPart .carousel-control-next,body.dark-mode .carousel-control-prev,body.dark-mode .carousel-control-next{
     background-color: #3b7b8b;
     color: white;
 }
