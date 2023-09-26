@@ -145,5 +145,18 @@ progressBar.parent().on('click mousemove', function(e) {
 });
 
 
+
+
+
+//Gallery Function
+
+$(document).ready(function() {
+  // Function to handle image click and display in the modal
+  $('.portfolio-box').on('click', function() {
+    var imgSrc = $(this).find('img').attr('src');
+    $('#exampleModal img').attr('src', imgSrc);
+  });
+});
+
 });
 
