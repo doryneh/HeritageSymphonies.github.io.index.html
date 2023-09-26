@@ -212,7 +212,9 @@ section.AboutTheProject .MusicPattern {
     filter: brightness(0) invert(1);
     opacity: 0.1;
 }
-
+section.AboutTheProject.NewPageProject .paragraph{
+    line-height: 50px;
+}
 /***********
 ***********
 End About The Project
@@ -1298,5 +1300,12 @@ nav.navbar .navbar-collapse ul a{
    }
    .googleDrive{
     max-height: 155px !important;
+   }
+   section.AboutTheProject.NewPageProject img{
+    width: 100% !important;
+    margin-bottom: 20px;
+   }
+   section.AboutTheProject.NewPageProject .paragraph{
+    line-height: unset;
    }
 }
